@@ -69,7 +69,6 @@ def metr_parse():
             t2 = t1.replace(h2.group(0),"")    
             h3 = re.search(pat3, t2)
             t3 = t2.replace(h3.group(0),"")
-  
             h4 = re.search(pat4, t3)
             if h4.group(0) != '-' : upstream_requests += 1
 
