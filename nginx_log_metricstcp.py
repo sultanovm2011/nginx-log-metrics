@@ -66,8 +66,7 @@ def metr_parse():
             t1 = text.replace(h1.group(0),"")
             h2 = re.search(pat2, t1)
             total_bytes += int(h2.group(0))
-            t2 = t1.replace(h2.group(0),"")
-            print(h2)       
+            t2 = t1.replace(h2.group(0),"")    
             h3 = re.search(pat3, t2)
             t3 = t2.replace(h3.group(0),"")
   
